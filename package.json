@@ -1,5 +1,5 @@
 {
-  "name": "try-vscode-extension-webview",
+	"name": "try-vscode-extension-webview",
 	"displayName": "try-vscode-extension-webview",
 	"description": "try vscode extension webview",
 	"version": "0.0.1",
@@ -10,14 +10,20 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:try-vscode-extension-webview.helloWorld"
+		"onCommand:try-vscode-extension-webview.helloWorld",
+		"onCommand:try-vscode-extension-webview.show"
 	],
-	"main": "./out/extension.js",
+	"main": "./out/ext-src/extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"command": "try-vscode-extension-webview.helloWorld",
 				"title": "Hello World"
+			},
+			{
+				"command": "try-vscode-extension-webview.show",
+				"title": "Try show a cat",
+				"category": "Cat Codicons"
 			}
 		]
 	},
@@ -26,20 +32,23 @@
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
 		"pretest": "yarn run compile && yarn run lint",
-		"lint": "eslint src --ext ts",
+		"lint": "eslint ext-src --ext ts",
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.46.0",
 		"@types/glob": "^7.1.3",
 		"@types/mocha": "^8.0.4",
 		"@types/node": "^12.11.7",
-		"eslint": "^7.19.0",
+		"@types/vscode": "^1.46.0",
 		"@typescript-eslint/eslint-plugin": "^4.14.1",
 		"@typescript-eslint/parser": "^4.14.1",
+		"eslint": "^7.19.0",
 		"glob": "^7.1.6",
 		"mocha": "^8.2.1",
 		"typescript": "^4.1.3",
 		"vscode-test": "^1.5.0"
+	},
+	"dependencies": {
+		"vscode-codicons": "^0.0.16"
 	}
 }

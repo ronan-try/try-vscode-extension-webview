@@ -1503,6 +1503,11 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
 
+vscode-codicons@^0.0.16:
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/vscode-codicons/-/vscode-codicons-0.0.16.tgz#0bef18bfc0e9378ceb77213326495960cb53561f"
+  integrity sha512-OUijQNEJ78cmipWUR/LlUeTF9xAUW3/23YhgF3fNOKXKbajGTctUL8+sarVY1dZzv1ii7ilHXYkSJwh/d90XuA==
+
 vscode-test@^1.5.0:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/vscode-test/-/vscode-test-1.5.2.tgz#d9ec3cab1815afae1d7d81923e3c685d13d32303"
